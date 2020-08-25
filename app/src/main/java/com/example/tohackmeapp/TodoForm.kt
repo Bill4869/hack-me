@@ -8,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.example.tohackmeapp.FormatConvertion.toMap
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_todo_form.*
@@ -26,7 +27,6 @@ class TodoForm : AppCompatActivity() {
         btn_back.setOnClickListener(){
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 
@@ -37,17 +37,18 @@ class TodoForm : AppCompatActivity() {
 
         val selectedId = radioGroup.checkedRadioButtonId
         val radiobtn = findViewById<RadioButton>(selectedId)
+        val userID = fAuth!!.currentUser!!.uid
 
         // add task
-        val taskId = 1
-        val userID = fAuth!!.currentUser!!.uid
-        var documentReference: DocumentReference = fStore!!.collection("users").document(userID).collection("tasks").document(taskId.toString())
-        val task : Todo = Todo(taskId, title, descrip, radiobtn.text.toString(), level)
-        documentReference.set(task.toMap())
-
+        fStore!!.collection("users").document(userID).collection("tasks").get().addOnSuccessListener {
+            var taskId = it.size() + 1
+            var collectionReference: CollectionReference = fStore!!.collection("users").document(userID).collection("tasks")
+            val task : Todo = Todo(taskId, title, descrip, radiobtn.text.toString(), level)
+            collectionReference.add(task.toMap())
+        }
 
         Toast.makeText(this, "Task Created", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, TodoList::class.java)
         startActivity(intent)
         finish()
 

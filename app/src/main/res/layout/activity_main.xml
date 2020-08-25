@@ -48,7 +48,7 @@
             android:gravity="left"
             android:textSize="20sp"
             android:padding="10dp"
-            android:text="00" />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,7 +76,7 @@
             android:gravity="left"
             android:textSize="20sp"
             android:padding="10dp"
-            android:text="00" />
+            android:text="" />
     </LinearLayout>
 
 
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="bottom"
-            android:text="追加" />
+            android:text="タスク作成" />
 
         <Button
             android:id="@+id/btnLogout"
@@ -106,14 +106,6 @@
             android:onClick="onLogout"
             android:layout_gravity="bottom"
             />
-
-<!--        <Button-->
-<!--            android:id="@+id/button3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            android:text="Button" />-->
 
         <Button
             android:id="@+id/btnShowTask"

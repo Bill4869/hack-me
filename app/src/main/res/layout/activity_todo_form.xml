@@ -67,30 +67,31 @@
             android:id="@+id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <RadioButton
                 android:id="@+id/radio_phy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="workout"
-                android:layout_weight="1"
+                android:text="physical"
+                android:layout_weight="0.27"
                 />
 
             <RadioButton
                 android:id="@+id/radio_intel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="study"
-                android:layout_weight="1"
+                android:text="intelligence"
+                android:layout_weight="0.24"
                 />
 
             <RadioButton
                 android:id="@+id/radio_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="life"
-                android:layout_weight="1"
+                android:text="lifestyle"
+                android:layout_weight="0.25"
                 />
 
             <RadioButton
@@ -98,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="others"
-                android:layout_weight="1"
+                android:layout_weight="0.27"
                 />
 
         </RadioGroup>
@@ -108,9 +109,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Create"
             android:onClick="onCreateTask"
-            />
+            android:text="作成" />
 
 
     </LinearLayout>

@@ -6,24 +6,24 @@ import com.google.gson.reflect.TypeToken
 
 
 data class User (
-    val id : String,
-    val name : String,
-    val monster_id : Int = 1,
-    val level : Int = 1,
-    val hp : Int = 10,
-    val ep : Int = 0,
-    val physical : Int = 0,
-    val intelligence : Int = 0,
-    val lifestyle : Int = 0,
-    val others : Int = 0
+    val id : String = "",
+    var name : String = "",
+    var monster_id : Int = 1,
+    var level : Int = 1,
+    var hp : Int = 10,
+    var ep : Int = 0,
+    var physical : Int = 0,
+    var intelligence : Int = 0,
+    var lifestyle : Int = 0,
+    var others : Int = 0
 )
 
 data class Todo (
-    val id : Int,
-    val title : String,
-    val explanation : String,
-    val tag : String,
-    val level : Int,
+    val id : Int? = null,
+    val title : String = "",
+    val explanation : String = "",
+    val tag : String = "",
+    val level : Int? = null,
     val status : Boolean = false
 )
 

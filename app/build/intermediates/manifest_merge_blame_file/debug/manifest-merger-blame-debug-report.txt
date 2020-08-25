@@ -13,141 +13,149 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:5:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\8a68c5320e4a686eaa5c0dd0659d6df8\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:10:5-79
-12-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\8a68c5320e4a686eaa5c0dd0659d6df8\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:10:22-76
-13
-14    <application
-14-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:7:5-41:19
-15        android:name="androidx.multidex.MultiDexApplication"
-16        android:allowBackup="true"
-16-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:8:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\de5d1db60e94bc01567981b5c2f2ad4e\core-1.3.1\AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:9:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:10:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:11:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:12:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme" >
-24-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:13:9-40
-25        <activity android:name="com.example.tohackmeapp.TodoForm" />
-25-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:14:9-55
-25-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:14:19-43
-26        <activity
-26-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:15:9-19:58
-27            android:name="com.example.tohackmeapp.Login"
-27-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:16:13-34
-28            android:screenOrientation="portrait"
-28-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:17:13-49
-29            android:theme="@style/NoActionBarTheme"
-29-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:18:13-52
-30            android:windowSoftInputMode="adjustResize" />
-30-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:19:13-55
-31        <activity
-31-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:20:9-30:20
-32            android:name="com.example.tohackmeapp.Register"
-32-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:21:13-37
-33            android:screenOrientation="portrait"
-33-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:22:13-49
-34            android:theme="@style/NoActionBarTheme"
-34-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:23:13-52
-35            android:windowSoftInputMode="adjustResize" >
-35-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:24:13-55
-36            <intent-filter>
-36-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:25:13-29:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:26:17-69
-37-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:26:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:28:17-77
-39-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:28:27-74
-40            </intent-filter>
-41        </activity>
-42        <activity
-42-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:31:9-40:20
-43            android:name="com.example.tohackmeapp.MainActivity"
-43-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:32:13-41
-44            android:screenOrientation="portrait"
-44-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:33:13-49
-45            android:theme="@style/NoActionBarTheme" >
-45-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:34:13-52
-46            <intent-filter>
-46-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:35:13-39:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:26:17-69
-47-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:26:25-66
-48
-49                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
-53            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-53-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
-54            android:excludeFromRecents="true"
-54-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
-55            android:exported="true"
-55-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
-56            android:launchMode="singleTask"
-56-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
-57            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-57-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
-58            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-58-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
-59
-60        <service
-60-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
-61            android:name="com.google.firebase.components.ComponentDiscoveryService"
-61-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
-62            android:exported="false" >
-62-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
-63            <meta-data
-63-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
-64                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-64-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d32ca01b6be6fba1100349796575bcd1\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
-66            <meta-data
-66-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\8a68c5320e4a686eaa5c0dd0659d6df8\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:15:13-17:85
-67                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-67-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\8a68c5320e4a686eaa5c0dd0659d6df8\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:16:17-111
-68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\8a68c5320e4a686eaa5c0dd0659d6df8\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:17:17-82
-69        </service>
-70
-71        <activity
-71-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7992c4b6db248ac84b6d380609b41e96\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-72            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-72-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7992c4b6db248ac84b6d380609b41e96\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-73            android:exported="false"
-73-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7992c4b6db248ac84b6d380609b41e96\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-74-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7992c4b6db248ac84b6d380609b41e96\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+12
+13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:13:5-79
+15-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:13:22-76
+16
+17    <application
+17-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:7:5-42:19
+18        android:name="androidx.multidex.MultiDexApplication"
+19        android:allowBackup="true"
+19-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:8:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\de5d1db60e94bc01567981b5c2f2ad4e\core-1.3.1\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:9:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:10:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:11:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:12:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:13:9-40
+28        <activity android:name="com.example.tohackmeapp.TodoList" />
+28-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:14:9-55
+28-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:14:19-43
+29        <activity android:name="com.example.tohackmeapp.TodoForm" />
+29-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:15:9-46
+29-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:15:19-43
+30        <activity
+30-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:16:9-20:58
+31            android:name="com.example.tohackmeapp.Login"
+31-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:17:13-34
+32            android:screenOrientation="portrait"
+32-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:18:13-49
+33            android:theme="@style/NoActionBarTheme"
+33-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:19:13-52
+34            android:windowSoftInputMode="adjustResize" />
+34-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:20:13-55
+35        <activity
+35-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:21:9-31:20
+36            android:name="com.example.tohackmeapp.Register"
+36-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:22:13-37
+37            android:screenOrientation="portrait"
+37-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:23:13-49
+38            android:theme="@style/NoActionBarTheme"
+38-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:24:13-52
+39            android:windowSoftInputMode="adjustResize" >
+39-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:25:13-55
+40            <intent-filter>
+40-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:26:13-30:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:27:17-69
+41-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:27:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:29:17-77
+43-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:29:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:32:9-41:20
+47            android:name="com.example.tohackmeapp.MainActivity"
+47-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:33:13-41
+48            android:screenOrientation="portrait"
+48-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:34:13-49
+49            android:theme="@style/NoActionBarTheme" >
+49-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:35:13-52
+50            <intent-filter>
+50-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:36:13-40:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:27:17-69
+51-->C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:27:25-66
+52
+53                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+57            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+57-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+58            android:excludeFromRecents="true"
+58-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+59            android:exported="true"
+59-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+60            android:launchMode="singleTask"
+60-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+61            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+61-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+62-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+63
+64        <service
+64-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+65            android:name="com.google.firebase.components.ComponentDiscoveryService"
+65-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+66            android:directBootAware="true"
+66-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+68            <meta-data
+68-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+69                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+69-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+71            <meta-data
+71-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:20:13-22:85
+72                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+72-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:21:17-111
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:22:17-82
+74        </service>
 75
-76        <provider
-76-->[com.google.firebase:firebase-common:16.0.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\917eee1067a568a59d010683f8995f13\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-77            android:name="com.google.firebase.provider.FirebaseInitProvider"
-77-->[com.google.firebase:firebase-common:16.0.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\917eee1067a568a59d010683f8995f13\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-78            android:authorities="com.example.tohackmeapp.firebaseinitprovider"
-78-->[com.google.firebase:firebase-common:16.0.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\917eee1067a568a59d010683f8995f13\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-79            android:exported="false"
-79-->[com.google.firebase:firebase-common:16.0.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\917eee1067a568a59d010683f8995f13\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-80            android:initOrder="100" />
-80-->[com.google.firebase:firebase-common:16.0.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\917eee1067a568a59d010683f8995f13\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
-81
-82        <meta-data
-82-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\42990c5805437c92e044abe58800c448\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-83            android:name="com.google.android.gms.version"
-83-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\42990c5805437c92e044abe58800c448\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-84            android:value="@integer/google_play_services_version" />
-84-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\42990c5805437c92e044abe58800c448\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-85    </application>
+76        <activity
+76-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e058274008ac78f99a1b47f464393e1c\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e058274008ac78f99a1b47f464393e1c\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e058274008ac78f99a1b47f464393e1c\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e058274008ac78f99a1b47f464393e1c\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+80
+81        <provider
+81-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+82            android:name="com.google.firebase.provider.FirebaseInitProvider"
+82-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+83            android:authorities="com.example.tohackmeapp.firebaseinitprovider"
+83-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+84            android:exported="false"
+84-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+85            android:initOrder="100" />
+85-->[com.google.firebase:firebase-common:19.3.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f29493ca398d7abca0103c1fbc46f3d8\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 86
-87</manifest>
+87        <meta-data
+87-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\ba8015e763c8f6dce91f3767e84f9608\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+88            android:name="com.google.android.gms.version"
+88-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\ba8015e763c8f6dce91f3767e84f9608\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+89            android:value="@integer/google_play_services_version" />
+89-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\ba8015e763c8f6dce91f3767e84f9608\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+90    </application>
+91
+92</manifest>

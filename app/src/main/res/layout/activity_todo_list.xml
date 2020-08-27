@@ -5,38 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TodoList"
-    >
+    tools:context=".TodoList">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
         android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="ToDo" />
+        android:text="ToDo"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/todoList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btnBar"
-            />
+            android:layout_above="@+id/btnBar" />
 
 
         <LinearLayout
             android:id="@+id/btnBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_alignParentBottom="true"
-            >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnFinishedAll"

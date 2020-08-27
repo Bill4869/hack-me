@@ -44,6 +44,10 @@
         "source": "C:\\Users\\BiLL\\AndroidStudioProjects\\ToHackMeApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\BiLL\\AndroidStudioProjects\\ToHackMeApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_task.xml.flat",
+        "source": "C:\\Users\\BiLL\\AndroidStudioProjects\\ToHackMeApp\\app\\src\\main\\res\\layout\\activity_edit_task.xml"
+    },
+    {
         "merged": "C:\\Users\\BiLL\\AndroidStudioProjects\\ToHackMeApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\BiLL\\AndroidStudioProjects\\ToHackMeApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },

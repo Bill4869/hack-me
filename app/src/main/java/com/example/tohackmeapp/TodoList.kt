@@ -16,12 +16,16 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.*
 import kotlinx.android.synthetic.main.activity_todo_list.*
 
-class TodoList : AppCompatActivity() {
-    var fStore : FirebaseFirestore? = null
-    var fAuth : FirebaseAuth? = null
-    var userId : Any? = null
-    var taskList : List<Todo> = ArrayList()
-    val taskListAdapter: TaskListAdapter = TaskListAdapter(taskList)
+class TodoList : AppCompatActivity(), (Todo) -> Unit {
+    companion object {
+        val SELECTED_TASK = "com.example.tohackme.SELECTED_TASK"
+    }
+
+    var fStore: FirebaseFirestore? = null
+    var fAuth: FirebaseAuth? = null
+    var userId: Any? = null
+    var taskList: List<Todo> = ArrayList()
+    val taskListAdapter: TaskListAdapter = TaskListAdapter(taskList, this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,24 +47,36 @@ class TodoList : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_back.setOnClickListener() {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
     override fun onStart() {
         super.onStart()
-        fStore!!.collection("users").document(userId.toString()).collection("tasks").addSnapshotListener(this, EventListener { value, error ->
-            if (error != null) {
-                return@EventListener
-            }
-            getTaskList()
-        })
+        fStore!!.collection("users").document(userId.toString()).collection("tasks")
+            .addSnapshotListener(this, EventListener { value, error ->
+                if (error != null) {
+                    return@EventListener
+                }
+                getTaskList()
+            })
     }
 
     fun getTaskList() {
-        val document = fStore!!.collection("users").document(userId.toString()).collection("tasks").orderBy("id", Query.Direction.ASCENDING)
+        val document = fStore!!.collection("users").document(userId.toString()).collection("tasks")
+            .orderBy("status", Query.Direction.DESCENDING)
         document.get().addOnCompleteListener {
             if (it.isSuccessful) {
                 taskList = it.result!!.toObjects(Todo::class.java)
+
+                for ((index, task) in it.result!!.withIndex()) {
+                    taskList[index].id = task.id
+                }
+
                 taskListAdapter.taskList = taskList
                 taskListAdapter.notifyDataSetChanged()
             }
@@ -72,15 +88,28 @@ class TodoList : AppCompatActivity() {
         var intelligence = 0
         var lifestyle = 0
         var others = 0
+        val batch = FirebaseFirestore.getInstance().batch()
         for (task in taskList) {
-            when (task.tag) {
-                "physical" -> physical += task.level!!
-                "intelligence" -> intelligence += task.level!!
-                "lifestyle" -> lifestyle += task.level!!
-                "others" -> others += task.level!!
+            if (!task.status) {
+                when (task.tag) {
+                    "physical" -> physical += task.level!!
+                    "intelligence" -> intelligence += task.level!!
+                    "lifestyle" -> lifestyle += task.level!!
+                    "others" -> others += task.level!!
+                }
+                task.status = true
+                val documented =
+                    fStore!!.collection("users").document(userId.toString()).collection("tasks")
+                        .document(task.id.toString())
+
+//                documented.set(task, SetOptions.merge())
+                batch.set(documented, task, SetOptions.merge())
+//                batch.update(documented, task.toMap())
             }
         }
-        var totalXp = physical + intelligence + lifestyle + others
+        batch.commit()
+
+        val totalXp = physical + intelligence + lifestyle + others
         val documentReference = fStore!!.collection("users").document(userId.toString())
         documentReference.get().addOnSuccessListener {
             val user = it.toObject(User::class.java)
@@ -90,22 +119,32 @@ class TodoList : AppCompatActivity() {
             user!!.others += others
             user!!.ep += totalXp
 
+            if (user!!.level < 4) user.level = (user.ep / 5) + 1
+
             documentReference.update(user.toMap())
         }
-        deleteAll(view)
     }
 
     fun deleteAll(view: View) {
-        fStore!!.collection("users").document(userId.toString()).collection("tasks").get().addOnSuccessListener {
-            val batch = FirebaseFirestore.getInstance().batch()
-            val list = it.documents
-            for (document in list) {
-                batch.delete(document.reference)
+        fStore!!.collection("users").document(userId.toString()).collection("tasks").get()
+            .addOnSuccessListener {
+                val batch = FirebaseFirestore.getInstance().batch()
+                val list = it.documents
+                for (document in list) {
+                    batch.delete(document.reference)
+                }
+                batch.commit().addOnSuccessListener {
+                    taskListAdapter.notifyDataSetChanged()
+                    Toast.makeText(this, "削除", Toast.LENGTH_SHORT).show()
+                }
             }
-            batch.commit().addOnSuccessListener {
-                taskListAdapter.notifyDataSetChanged()
-                Toast.makeText(this, "削除", Toast.LENGTH_SHORT).show()
-            }
-        }
+    }
+
+    override fun invoke(task: Todo) {
+        val taskId: String = task.id!!
+//        println(taskId)
+        val intent = Intent(this, editTask::class.java)
+        intent.putExtra(SELECTED_TASK, taskId)
+        startActivity(intent)
     }
 }

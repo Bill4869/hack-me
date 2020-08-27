@@ -11,8 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TodoList"></activity>
-        <activity android:name=".TodoForm" />
+        <activity
+            android:name=".editTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TodoList"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name=".TodoForm"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Login"
             android:screenOrientation="portrait"

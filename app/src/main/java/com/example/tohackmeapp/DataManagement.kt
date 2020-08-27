@@ -1,12 +1,13 @@
 package com.example.tohackmeapp
 
 import com.example.tohackmeapp.FormatConvertion.toObject
+import com.google.firebase.firestore.Exclude
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 
 data class User (
-    val id : String = "",
+//    val id : String = "",
     var name : String = "",
     var monster_id : Int = 1,
     var level : Int = 1,
@@ -19,12 +20,13 @@ data class User (
 )
 
 data class Todo (
-    val id : Int? = null,
-    val title : String = "",
-    val explanation : String = "",
-    val tag : String = "",
-    val level : Int? = null,
-    val status : Boolean = false
+    var title : String = "",
+    var explanation : String = "",
+    var tag : String = "",
+    var level : Int? = null,
+    var status : Boolean = false,
+    @get:Exclude
+    var id : String? = null
 )
 
 data class Monster (

@@ -69,7 +69,7 @@ class Register : AppCompatActivity() {
                 val userID = fAuth!!.currentUser!!.uid
 
                 var documentReference: DocumentReference = fStore!!.collection("users").document(userID)
-                val user : User = User(userID, name)
+                val user : User = User(name)
                 documentReference.set(user.toMap())
 
                 val intent = Intent(this, MainActivity::class.java)

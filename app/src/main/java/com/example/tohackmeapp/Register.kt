@@ -15,6 +15,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity() {
+    val NUMBER_OF_MONSTER = 2
 
     var fAuth : FirebaseAuth? = null
     var fStore : FirebaseFirestore? = null
@@ -67,9 +68,10 @@ class Register : AppCompatActivity() {
             if (it.isSuccessful) {
                 Toast.makeText(this, "User Created", Toast.LENGTH_SHORT).show()
                 val userID = fAuth!!.currentUser!!.uid
+                val monsterId = (1..NUMBER_OF_MONSTER).random()
 
                 var documentReference: DocumentReference = fStore!!.collection("users").document(userID)
-                val user : User = User(name)
+                val user : User = User(name, monsterId)
                 documentReference.set(user.toMap())
 
                 val intent = Intent(this, MainActivity::class.java)

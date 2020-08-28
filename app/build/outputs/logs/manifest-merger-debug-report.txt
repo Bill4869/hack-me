@@ -6,12 +6,14 @@ INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\Andro
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:2:1-54:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\20aaeec1a19b462a95eb476ad23e22e0\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c82a8e4350d678c635a519b74ec6d109\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b48118e03805392d71ae6bd281eb6ea8\material-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\759a74933abab915d20a7d38a0b27c75\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\48d977bb20a1f7fb36a5543f31776268\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:17:1-42:12
 MERGED from [com.firebaseui:firebase-ui-firestore:6.2.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\73665137c8c5d7c731987b31c4ce4767\jetified-firebase-ui-firestore-6.2.1\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\acec69db496ff2f7b5b323331dde6a8d\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b2842da5aa9b094f8a3d34f6bd31ad3e\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\6011e177eab9caacfb2e84111e1214e2\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\9869fc2ef5bd575ada7833b03c83d893\jetified-firebase-storage-19.1.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f22aeb4b859933559a8c4fe65b4c7e52\jetified-firebase-database-19.3.1\AndroidManifest.xml:15:1-38:12
@@ -28,15 +30,16 @@ MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\BiLL\.gradle\caches\tran
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c597221ac1bc9ed669eeee6ab736f42f\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a5310399718834be89a55c6a5434b656\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1aaf531423a38df80eda6e629f61a0e5\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e832b2b5868e53871131f1e887023372\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a7946058a1fb15c17a12723913c74d86\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\727baea7a8d5d4ee7a71add9e9f09045\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\60a1883d3c8abced52d4ed577f173fd2\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a5ac4cef4de9653e22292cadc8985046\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\254a68b7d0a1d520cf9db358679a8de2\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\0d8844a5e0d39cc10fec2a2b4e080db1\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d96297db6885dc406f9ad5482c9da86a\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\28bbbb7f499c3d38889b40e445c3667f\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\78af76f581d4d57cf9bc02199a4fddea\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7f1f6a176bb65d72f2ab2ce0e9beaea1\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1c6de34ee7b7199b09870192d6a93f8e\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -57,6 +60,7 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\BiLL\.gradle\caches
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\ccd28ffa801be874718683990c587e96\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c55d27daa1b53b1dbfde67dca4a56ed3\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\064ed82ba1cee3cfb603fdb97ec44807\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\909b633c9f561786db9454f55d854556\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:2:1-54:12
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:2:1-54:12
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:2:1-54:12
@@ -88,6 +92,8 @@ MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\BiLL\.gradle
 		ADDED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml:7:5-52:19
+MERGED from [com.google.android.material:material:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b48118e03805392d71ae6bd281eb6ea8\material-1.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b48118e03805392d71ae6bd281eb6ea8\material-1.2.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\48d977bb20a1f7fb36a5543f31776268\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\48d977bb20a1f7fb36a5543f31776268\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:19.3.2] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1ef4db782a68966ad180171b096303be\jetified-firebase-auth-19.3.2\AndroidManifest.xml:23:5-40:19
@@ -200,6 +206,8 @@ MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\BiLL\.gradle\caches\tran
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\20aaeec1a19b462a95eb476ad23e22e0\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c82a8e4350d678c635a519b74ec6d109\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c82a8e4350d678c635a519b74ec6d109\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b48118e03805392d71ae6bd281eb6ea8\material-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b48118e03805392d71ae6bd281eb6ea8\material-1.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\759a74933abab915d20a7d38a0b27c75\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\759a74933abab915d20a7d38a0b27c75\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\48d977bb20a1f7fb36a5543f31776268\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
@@ -212,6 +220,8 @@ MERGED from [com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradl
 MERGED from [com.google.firebase:firebase-firestore:21.5.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\2cb1a0371b4987b62017684a374d09aa\jetified-firebase-firestore-21.5.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\acec69db496ff2f7b5b323331dde6a8d\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\acec69db496ff2f7b5b323331dde6a8d\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b2842da5aa9b094f8a3d34f6bd31ad3e\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\b2842da5aa9b094f8a3d34f6bd31ad3e\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\6011e177eab9caacfb2e84111e1214e2\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\6011e177eab9caacfb2e84111e1214e2\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\9869fc2ef5bd575ada7833b03c83d893\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
@@ -244,24 +254,26 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BiLL\.gradle
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a5310399718834be89a55c6a5434b656\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1aaf531423a38df80eda6e629f61a0e5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\1aaf531423a38df80eda6e629f61a0e5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e832b2b5868e53871131f1e887023372\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\e832b2b5868e53871131f1e887023372\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a7946058a1fb15c17a12723913c74d86\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a7946058a1fb15c17a12723913c74d86\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\727baea7a8d5d4ee7a71add9e9f09045\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\727baea7a8d5d4ee7a71add9e9f09045\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\60a1883d3c8abced52d4ed577f173fd2\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\60a1883d3c8abced52d4ed577f173fd2\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a5ac4cef4de9653e22292cadc8985046\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\a5ac4cef4de9653e22292cadc8985046\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\254a68b7d0a1d520cf9db358679a8de2\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\254a68b7d0a1d520cf9db358679a8de2\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\0d8844a5e0d39cc10fec2a2b4e080db1\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\0d8844a5e0d39cc10fec2a2b4e080db1\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d96297db6885dc406f9ad5482c9da86a\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\d96297db6885dc406f9ad5482c9da86a\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\28bbbb7f499c3d38889b40e445c3667f\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\28bbbb7f499c3d38889b40e445c3667f\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\f2b900c8b365437d8835d5300d7e70dd\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\4f74d05cc3e2035fe176ff97847c43e1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\78af76f581d4d57cf9bc02199a4fddea\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\78af76f581d4d57cf9bc02199a4fddea\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\7f1f6a176bb65d72f2ab2ce0e9beaea1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -302,6 +314,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\BiLL\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\c55d27daa1b53b1dbfde67dca4a56ed3\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\064ed82ba1cee3cfb603fdb97ec44807\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\064ed82ba1cee3cfb603fdb97ec44807\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\909b633c9f561786db9454f55d854556\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\BiLL\.gradle\caches\transforms-2\files-2.1\909b633c9f561786db9454f55d854556\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\BiLL\AndroidStudioProjects\ToHackMeApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion

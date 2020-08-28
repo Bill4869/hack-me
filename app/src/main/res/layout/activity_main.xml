@@ -7,35 +7,92 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/normalbtn"
+            android:text="タスク作成" />
+
+
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/selectedbtn"
+            android:text="モンスター" />
+
+        <Button
+            android:id="@+id/btnShowTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/normalbtn"
+            android:text="一覧" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/normalbtn"
+            android:onClick="onLogout"
+            android:text="ログアウト" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/userName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:text="Hello World!"
-        android:textSize="20sp" />
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:text="Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ImageView
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="270dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvMonsterLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Level.2"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
 
         <TextView
             android:id="@+id/hp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right"
-            android:padding="10dp"
+            android:gravity="center"
             android:text="HP"
             android:textSize="20sp" />
 
@@ -44,25 +101,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="left"
-            android:padding="10dp"
-            android:text=""
+            android:gravity="center"
+            android:text="10/10"
             android:textSize="20sp" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="27dp"
+            android:background="#c0c0c0"/>
 
         <TextView
             android:id="@+id/exp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right"
-            android:padding="10dp"
+            android:gravity="center"
             android:text="EXP"
             android:textSize="20sp" />
 
@@ -71,45 +124,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="left"
-            android:padding="10dp"
-            android:text=""
+            android:gravity="center"
+            android:text="9/10"
             android:textSize="20sp" />
     </LinearLayout>
 
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-
-        <Button
-            android:id="@+id/btnAddTask"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/todoHeader"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:text="タスク作成" />
+            android:background="@color/bgcolor"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="ToDo" />
 
-        <Button
-            android:id="@+id/btnLogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:onClick="onLogout"
-            android:text="Logout" />
 
-        <Button
-            android:id="@+id/btnShowTask"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:text="一覧" />
-    </LinearLayout>
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/todoHeader"
+            android:background="@color/bgcolor"
+            />
+    </RelativeLayout>
 
 </LinearLayout>

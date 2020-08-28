@@ -3,4 +3,15 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="normalbtn">#BAE3A0</color>
+    <color name="selectedbtn">#77BB41</color>
+
+    <color name="physicalcolor">#A8BFE4</color>
+    <color name="intelligencecolor">#F9A88F</color>
+    <color name="lifestylecolor">#BAE3A0</color>
+
+    <color name="bgcolor">#F8F9C1</color>
+
+
 </resources>

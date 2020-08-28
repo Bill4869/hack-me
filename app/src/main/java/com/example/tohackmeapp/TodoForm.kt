@@ -28,6 +28,11 @@ class TodoForm : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        button17.setOnClickListener(){
+            val intent = Intent(this, TodoList::class.java)
+            startActivity(intent)
+        }
     }
 
     fun onCreateTask(view: View) {
@@ -37,14 +42,21 @@ class TodoForm : AppCompatActivity() {
 
         val selectedId = radioGroup.checkedRadioButtonId
         val radiobtn = findViewById<RadioButton>(selectedId)
+        var tag = ""
+        when (radiobtn.text.toString()) {
+            "運動" -> tag = "physical"
+            "学習" -> tag = "intelligence"
+            "生活" -> tag = "lifestyle"
+            "その他" -> tag = "others"
+        }
         val userID = fAuth!!.currentUser!!.uid
 
         // add task
         val document = fStore!!.collection("users").document(userID).collection("tasks").document()
-        val task : Todo = Todo(title, descrip, radiobtn.text.toString(), level)
+        val task : Todo = Todo(title, descrip, tag, level)
         document.set(task.toMap())
 
-        Toast.makeText(this, "Task Created", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "作成", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, TodoList::class.java)
         startActivity(intent)
         finish()

@@ -7,34 +7,114 @@
     android:orientation="vertical"
     tools:context=".TodoList">
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:gravity="center"
-        android:text="Back"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="16sp" />
+<!--    <Button-->
+<!--        android:id="@+id/btn_back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Back"-->
+<!--        android:textColor="@android:color/darker_gray"-->
+<!--        android:textSize="16sp" />-->
 
-    <TextView
-        android:id="@+id/textView3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="ToDo"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/normalbtn"
+            android:onClick="addTask"
+            android:text="タスク作成" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnLogout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:onClick="onLogout"-->
+        <!--            android:text="Logout" />-->
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/normalbtn"
+            android:text="モンスター" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/selectedbtn"
+            android:text="一覧" />
+    </LinearLayout>
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/bgcolor"
+        >
+
+        <LinearLayout
+            android:id="@+id/headerBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="ToDo"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/btnAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:textSize="35sp"
+                android:text="+"
+                android:onClick="addTask"
+                />
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="+"-->
+<!--                android:textSize="5sp"-->
+<!--                android:background="@color/bgcolor"-->
+<!--                />-->
+
+
+        </LinearLayout>
+
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/todoList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btnBar" />
+            android:layout_below="@+id/headerBar"
+            android:layout_above="@id/btnBar"/>
 
 
         <LinearLayout
@@ -43,6 +123,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal">
+
+
 
             <Button
                 android:id="@+id/btnFinishedAll"
@@ -53,13 +135,13 @@
                 android:onClick="finishAll"
                 android:text="全部完了" />
 
-            <Button
-                android:id="@+id/btnAddTask"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_weight="1"
-                android:text="追加" />
+<!--            <Button-->
+<!--                android:id="@+id/btnAddTask"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="追加" />-->
 
             <Button
                 android:id="@+id/btnDeleteAll"
@@ -70,6 +152,8 @@
                 android:onClick="deleteAll"
                 android:text="全部削除" />
         </LinearLayout>
+
+
 
     </RelativeLayout>
 </LinearLayout>

@@ -24,6 +24,8 @@ import kotlinx.android.synthetic.main.activity_edit_task.tvTitle
 
 class editTask : AppCompatActivity() {
 
+    val levelXpRange = listOf(5, 10, 15, 20)
+
     var fStore : FirebaseFirestore? = null
     var fAuth : FirebaseAuth? = null
 
@@ -58,6 +60,17 @@ class editTask : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        button12.setOnClickListener {
+            val  intent = Intent(this,TodoList::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        button10.setOnClickListener {
+            val  intent = Intent(this,TodoForm::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         btnUpdate.setOnClickListener() {
             val title = tvTitle.text.toString()
@@ -66,16 +79,24 @@ class editTask : AppCompatActivity() {
 
             val selectedId = radioGroup.checkedRadioButtonId
             val radiobtn = findViewById<RadioButton>(selectedId)
+            var tag = ""
+            when (radiobtn.text.toString()) {
+                "運動" -> tag = "physical"
+                "学習" -> tag = "intelligence"
+                "生活" -> tag = "lifestyle"
+                "その他" -> tag = "others"
+            }
 
             documented.get().addOnSuccessListener {
                 val task = it.toObject(Todo::class.java)
                 task!!.title = title
                 task.explanation = descrip
                 task.level = level
-                task.tag = radiobtn.text.toString()
+                task.tag = tag
 
                 documented.update(task.toMap())
             }
+            Toast.makeText(this, "更新", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, TodoList::class.java)
             startActivity(intent)
@@ -96,7 +117,11 @@ class editTask : AppCompatActivity() {
                             "others" -> user!!.others += task.level!!
                         }
                         user!!.ep += task.level!!
-                        if (user!!.level < 4) user.level = (user.ep / 5) + 1
+                        if ((user!!.ep >= levelXpRange[user.level - 1]) && user.level < levelXpRange.size) {
+                            user.ep -= levelXpRange[user.level - 1]
+                            user.level++
+                        }
+//                        if (user!!.level < 4) user.level = (user.ep / 5) + 1
 
                         userDocument.update(user.toMap())
                     }
@@ -104,7 +129,7 @@ class editTask : AppCompatActivity() {
                     task!!.status = true
                     documented.set(task, SetOptions.merge())
                 }
-
+                Toast.makeText(this, "完了", Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(this, TodoList::class.java)
                 startActivity(intent)

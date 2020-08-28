@@ -17,6 +17,8 @@ import com.google.firebase.firestore.*
 import kotlinx.android.synthetic.main.activity_todo_list.*
 
 class TodoList : AppCompatActivity(), (Todo) -> Unit {
+    val levelXpRange = listOf(5, 10, 15, 20)
+
     companion object {
         val SELECTED_TASK = "com.example.tohackme.SELECTED_TASK"
     }
@@ -42,16 +44,21 @@ class TodoList : AppCompatActivity(), (Todo) -> Unit {
         todoList.adapter = taskListAdapter
 
 
-        btnAddTask.setOnClickListener() {
-            val intent = Intent(this, TodoForm::class.java)
-            startActivity(intent)
-        }
 
-        btn_back.setOnClickListener() {
+//        btn_back.setOnClickListener() {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
+
+        btnHome.setOnClickListener() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
+    }
+    fun addTask(view: View) {
+        val intent = Intent(this, TodoForm::class.java)
+        startActivity(intent)
     }
 
 
@@ -119,9 +126,15 @@ class TodoList : AppCompatActivity(), (Todo) -> Unit {
             user!!.others += others
             user!!.ep += totalXp
 
-            if (user!!.level < 4) user.level = (user.ep / 5) + 1
+            while ((user!!.ep >= levelXpRange[user.level - 1]) && user.level < levelXpRange.size) {
+                user.ep -= levelXpRange[user.level - 1]
+                user.level++
+            }
+
+//            if (user!!.level < 4) user.level = (user.ep / 5) + 1
 
             documentReference.update(user.toMap())
+            Toast.makeText(this, "完了", Toast.LENGTH_SHORT).show()
         }
     }
 

@@ -30,6 +30,7 @@
             android:layout_weight="1"
             android:background="@color/normalbtn"
             android:onClick="addTask"
+            android:textStyle="bold"
             android:text="タスク作成" />
 
         <!--        <Button-->
@@ -48,6 +49,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@color/normalbtn"
+            android:textStyle="bold"
             android:text="モンスター" />
 
         <Button
@@ -56,6 +58,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@color/selectedbtn"
+            android:textStyle="bold"
             android:text="一覧" />
     </LinearLayout>
 

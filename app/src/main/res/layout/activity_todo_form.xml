@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#77bb41"
+            android:textStyle="bold"
             android:text="タスク作成" />
 
         <Button
@@ -27,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#bae3a0"
+            android:textStyle="bold"
             android:text="モンスター" />
 
         <Button
@@ -35,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#bae3a0"
+            android:textStyle="bold"
             android:text="一覧" />
 
     </LinearLayout>
